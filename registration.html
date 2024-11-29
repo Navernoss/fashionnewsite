@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Вход - Fashion New</title>
+    <title>Регистрация - Fashion New</title>
     <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 <body>
@@ -16,16 +16,20 @@
             <li><a href="catalog.html">Каталог</a></li>
             <li><a href="subscription.html">Подписка</a></li>
             <li><a href="about.html">О нас</a></li>
-            <li><a href="login.html" class="active">Вход</a></li>
-            <li><a href="registration.html">Регистрация</a></li>
+            <li><a href="login.html">Вход</a></li>
+            <li><a href="registration.html" class="active">Регистрация</a></li>
         </ul>
         <a href="order-call.html" class="btn btn-order text-upper">Заказать<br>звонок</a>
     </header>
 
     <main class="login-page">
         <div class="login-container">
-            <h1>Вход в аккаунт</h1>
+            <h1>Регистрация</h1>
             <form class="login-form">
+                <div class="form-group">
+                    <input type="text" id="username" required>
+                    <label for="username">Имя пользователя</label>
+                </div>
                 <div class="form-group">
                     <input type="email" id="email" required>
                     <label for="email">Email</label>
@@ -34,12 +38,17 @@
                     <input type="password" id="password" required>
                     <label for="password">Пароль</label>
                 </div>
-                <button type="submit" class="btn-login">Войти</button>
+                <div class="form-group">
+                    <input type="password" id="confirm-password" required>
+                    <label for="confirm-password">Подтвердите пароль</label>
+                </div>
+                <button type="submit" class="btn-login">Зарегистрироваться</button>
                 <div class="form-footer">
-                    <a href="#" class="forgot-password">Забыли пароль?</a>
+                    <a href="login.html" class="register">Уже есть аккаунт? Войти</a>
                 </div>
             </form>
         </div>
     </main>
 </body>
 </html>
+

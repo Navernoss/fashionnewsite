@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Подписка - Fashion New</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="../assets/img/logo.png" alt="logo">
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="catalog.html">Каталог</a></li>
+            <li><a href="subscription.html" class="active">Подписка</a></li>
+            <li><a href="about.html">О нас</a></li>
+            <li><a href="login.html">Вход</a></li>
+            <li><a href="registration.html">Регистрация</a></li>
+        </ul>
+        <a href="order-call.html" class="btn btn-order text-upper">Заказать<br>звонок</a>
+    </header>
+
+    <main class="login-page">
+        <div class="login-container subscription-container">
+            <h1>Подписка на новости</h1>
+            <p class="subscription-desc">Получайте первыми информацию о новых коллекциях и специальных предложениях</p>
+            
+            <div class="subscription-benefits">
+                <div class="benefit-item">
+                    <span class="benefit-icon">🎁</span>
+                    <p>Эксклюзивные предложения</p>
+                </div>
+                <div class="benefit-item">
+                    <span class="benefit-icon">🔔</span>
+                    <p>Уведомления о новинках</p>
+                </div>
+                <div class="benefit-item">
+                    <span class="benefit-icon">💰</span>
+                    <p>Специальные цены</p>
+                </div>
+            </div>
+
+            <form class="login-form">
+                <div class="form-group">
+                    <input type="text" id="name" required>
+                    <label for="name">Ваше имя</label>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" required>
+                    <label for="email">Email</label>
+                </div>
+                <div class="subscription-preferences">
+                    <label class="checkbox-container">
+                        <input type="checkbox" checked>
+                        <span class="checkmark"></span>
+                        Новости и акции
+                    </label>
+                    <label class="checkbox-container">
+                        <input type="checkbox" checked>
+                        <span class="checkmark"></span>
+                        Новые коллекции
+                    </label>
+                </div>
+                <button type="submit" class="btn-login">Подписаться</button>
+                <p class="privacy-policy">
+                    Нажимая кнопку, вы соглашаетесь с нашей 
+                    <a href="#">политикой конфиденциальности</a>
+                </p>
+            </form>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>О нас</h3>
+                <p>Мы любим модную одежду и стремимся предложить вам лучшие предложения.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Контакты</h3>
+                <p>Телефон: +7 (999) 123-45-67</p>
+                <p>Email: info@fashionnew.com</p>
+            </div>
+            <div class="footer-section">
+                <h3>Социальные сети</h3>
+                <div class="social-icons">
+                    <a href="#"><img src="../assets/img/facebook.png" alt="Facebook"></a>
+                    <a href="#"><img src="../assets/img/instagram.png" alt="Instagram"></a>
+                    <a href="#"><img src="../assets/img/twitter.png" alt="Twitter"></a>
+                </div>
+            </div>
+        </div>
+        <p class="copyright">© 2023 Fashion New. Все права защищены.</p>
+    </footer>
+</body>
+</html>

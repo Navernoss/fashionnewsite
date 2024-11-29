@@ -100,7 +100,10 @@ header {
     text-align: center;
 }
 
-.btn-order, .btn-white-big {
+.btn-order {
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
     background: #2E2E2E;
     color: #fff;
     padding: 12px 30px;
@@ -111,9 +114,10 @@ header {
     font-weight: 500;
     letter-spacing: 1px;
     transition: all 0.3s ease;
+    line-height: 1.2;
 }
 
-.btn-order:hover, .btn-white-big:hover {
+.btn-order:hover {
     background: transparent;
     color: #2E2E2E;
 }
@@ -524,4 +528,385 @@ header {
     font-weight: 700;
     color: #2E2E2E;
     letter-spacing: 0.5px;
+}
+
+.login-page {
+    min-height: calc(100vh - 80px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #f5f7fa 0%, #e4e8eb 100%);
+}
+
+.login-container {
+    background: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+.login-container h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #2E2E2E;
+    font-size: 24px;
+}
+
+.form-group {
+    position: relative;
+    margin-bottom: 25px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    border: none;
+    border-bottom: 2px solid #ddd;
+    outline: none;
+    background: transparent;
+    transition: 0.3s;
+}
+
+.form-group label {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    font-size: 16px;
+    color: #999;
+    pointer-events: none;
+    transition: 0.3s;
+}
+
+.form-group input:focus ~ label,
+.form-group input:valid ~ label {
+    top: -20px;
+    font-size: 14px;
+    color: #2E2E2E;
+}
+
+.form-group input:focus {
+    border-bottom: 2px solid #2E2E2E;
+}
+
+.btn-login {
+    width: 100%;
+    padding: 12px;
+    background: #2E2E2E;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 20px;
+}
+
+.btn-login:hover {
+    background: #000;
+}
+
+.form-footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.form-footer a {
+    color: #2E2E2E;
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.form-footer a:hover {
+    color: #666;
+}
+
+.order-call-container {
+    max-width: 500px;
+}
+
+.order-call-desc {
+    text-align: center;
+    color: #666;
+    margin-bottom: 30px;
+    font-size: 16px;
+}
+
+.form-group select {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    border: none;
+    border-bottom: 2px solid #ddd;
+    outline: none;
+    background: transparent;
+    transition: 0.3s;
+    cursor: pointer;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.form-group select:focus {
+    border-bottom: 2px solid #2E2E2E;
+}
+
+.form-group select:focus ~ label,
+.form-group select:valid ~ label {
+    top: -20px;
+    font-size: 14px;
+    color: #2E2E2E;
+}
+
+.form-group textarea {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    border: none;
+    border-bottom: 2px solid #ddd;
+    outline: none;
+    background: transparent;
+    transition: 0.3s;
+    resize: none;
+    min-height: 100px;
+    color: #2E2E2E;
+}
+
+.form-group textarea + label {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    font-size: 16px;
+    color: #999;
+    pointer-events: none;
+    transition: 0.3s;
+}
+
+.form-group textarea:focus + label,
+.form-group textarea:not(:placeholder-shown) + label {
+    top: -20px;
+    font-size: 14px;
+    color: #2E2E2E;
+}
+
+.form-group textarea::placeholder {
+    color: transparent;
+}
+
+.privacy-policy {
+    text-align: center;
+    font-size: 14px;
+    color: #666;
+    margin-top: 20px;
+}
+
+.privacy-policy a {
+    color: #2E2E2E;
+    text-decoration: none;
+    border-bottom: 1px solid #2E2E2E;
+}
+
+.privacy-policy a:hover {
+    color: #000;
+    border-bottom-color: #000;
+}
+
+/* Стили для активной кнопки в шапке */
+.btn-order.active {
+    background: #000;
+    border-color: #000;
+}
+
+.btn-white-big {
+    display: inline-block;
+    padding: 15px 40px;
+    background: transparent;
+    color: #2E2E2E;
+    border: 2px solid #2E2E2E;
+    border-radius: 5px;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 500;
+    letter-spacing: 2px;
+    transition: all 0.3s ease;
+    margin-top: 30px;
+}
+
+.btn-white-big:hover {
+    background: #2E2E2E;
+    color: #fff;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.btn-white-big:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.subscription-container {
+    max-width: 500px;
+}
+
+.subscription-desc {
+    text-align: center;
+    color: #666;
+    margin-bottom: 30px;
+    font-size: 16px;
+}
+
+.subscription-benefits {
+    display: flex;
+    justify-content: space-around;
+    margin: 30px 0;
+    padding: 20px;
+    background: #f8f8f8;
+    border-radius: 10px;
+}
+
+.benefit-item {
+    text-align: center;
+    flex: 1;
+    padding: 0 15px;
+}
+
+.benefit-icon {
+    font-size: 24px;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.benefit-item p {
+    font-size: 14px;
+    color: #2E2E2E;
+    margin: 0;
+}
+
+.subscription-preferences {
+    margin: 20px 0;
+}
+
+.checkbox-container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 16px;
+    user-select: none;
+    color: #2E2E2E;
+}
+
+.checkbox-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #fff;
+    border: 2px solid #2E2E2E;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.checkbox-container:hover input ~ .checkmark {
+    background-color: #f5f5f5;
+}
+
+.checkbox-container input:checked ~ .checkmark {
+    background-color: #2E2E2E;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.checkbox-container input:checked ~ .checkmark:after {
+    display: block;
+}
+
+.checkbox-container .checkmark:after {
+    left: 6px;
+    top: 2px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+
+@media (max-width: 768px) {
+    .subscription-benefits {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .benefit-item {
+        padding: 10px 0;
+    }
+}
+
+.privacy-page {
+    padding: 50px 0;
+    background: #f9f9f9;
+}
+
+.privacy-title {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 30px;
+    color: #2E2E2E;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.privacy-intro {
+    text-align: center;
+    font-style: italic;
+    margin-bottom: 40px;
+    color: #666;
+}
+
+.privacy-section {
+    margin-bottom: 40px;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.privacy-section h2 {
+    color: #2E2E2E;
+    margin-bottom: 20px;
+    font-size: 24px;
+    letter-spacing: 1px;
+}
+
+.privacy-section p {
+    line-height: 1.6;
+    color: #444;
+}
+
+.privacy-footer {
+    text-align: center;
+    margin-top: 50px;
+    padding: 20px;
+    background: #2E2E2E;
+    color: white;
+    border-radius: 10px;
 }
