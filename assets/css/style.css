@@ -910,3 +910,15 @@ header {
     color: white;
     border-radius: 10px;
 }
+
+.discounts {
+    text-align: center;
+    font-size: 24px;
+    margin-top: 30px;
+    background-color: #000000;
+    padding: 10px 0;
+    border-radius: 10px;
+    width: 50%;
+    color: #ffffff;
+    font-weight: 700;
+}
